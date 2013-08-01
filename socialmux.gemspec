@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Socialmux::VERSION
   spec.authors       = ["Stefano Verna"]
   spec.email         = ["stefano.verna@welaika.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Socialmux implements a strategy to add multiple social providers to the same user. It's meant to be used togheter with OmniAuth.}
+  spec.summary       = %q{Socialmux implements a strategy to add multiple social providers to the same user. It's meant to be used togheter with OmniAuth.}
   spec.homepage      = ""
   spec.license       = "MIT"
 

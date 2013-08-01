@@ -51,8 +51,8 @@ Or install it yourself as:
 This is a real word example for the following schema:
 
 * `User (email, password)`
-* `Profile (user_id, first_name, last_name, bio)`
-* `SocialAuth (user_id, provider, uid, raw_data)`
+* `Profile (user_id, first_name, last_name)`
+* `SocialAuth (user_id, provider, uid)`
 
 User requires an email, so if an external auth provider does not give us this 
 information, a form will be shown for the user to fill it in.
@@ -103,11 +103,10 @@ class SocialSchemaAdapter
     update_attr_if_blank(user, :email, data.email)
     update_attr_if_blank(profile, :first_name, data.first_name)
     update_attr_if_blank(profile, :last_name, data.last_name)
-    update_attr_if_blank(profile, :bio, data.description)
   end
 
   def build_authentication(user, data)
-    auth_attrs = { provider: data.provider, uid: data.uid, raw_data: data.info.to_hash }
+    auth_attrs = { provider: data.provider, uid: data.uid }
     user.social_auths.build(auth_attrs)
   end
 
@@ -161,7 +160,7 @@ end
 
     def user_params
       if request.post?
-        params.require(:user).permit(:email, profile_attributes: [ :first_name, :last_name, :bio ])
+        params.require(:user).permit(:email, profile_attributes: [ :first_name, :last_name ])
       else
         {}
       end
@@ -192,7 +191,6 @@ h1 Sign up with Social
     = f.simple_fields_for :profile do |p|
       = p.input :first_name
       = p.input :last_name
-      = p.input :bio
 
   = f.button :submit
 ```
