@@ -51,11 +51,11 @@ Or install it yourself as:
 This is a real word example for the following schema:
 
 * `User (email, password)`
-* `Profile (first_name, last_name, bio)`
+* `Profile (user_id, first_name, last_name, bio)`
 * `SocialAuth (user_id, provider, uid, raw_data)`
 
-The only required field for an User is email. So if an external auth provider 
-does not give us this information, a form is shown to insert it.
+User requires an email, so if an external auth provider does not give us this 
+information, a form will be shown for the user to fill it in.
 
 ### `config/routes.rb`
 
@@ -63,14 +63,20 @@ does not give us this information, a form is shown to insert it.
 MyApp::Application.routes.draw do
   devise_for :users
 
-  match '/auth/complete' => 'social#complete', as: :social_complete, via: [:get, :post], as: :social_complete
+  # OmniAuth route
   match '/auth/:provider/callback' => 'social#callback', via: [:get, :post]
+
+  # This is where the magic happens :)
+  match '/auth/complete' => 'social#complete', as: :social_complete, via: [:get, :post], as: :social_complete
 
   # ...
 end
 ```
 
 ### `app/services/social_schema_adapter.rb`
+
+This is the adapter to the database. Socialmux requires these methods'
+interfaces. The implementation will differ based on the project.
 
 ```ruby
 class SocialSchemaAdapter
@@ -124,15 +130,25 @@ end
     end
 
     def complete
-      authentication = Social::Strategy.new(
+
+      # Here we instanciate our Socialmux strategy with all the required
+      # arguments
+
+      authentication = Socialmux::Strategy.new(
         adapter: SocialSchemaAdapter.new,
         current_user: current_user,
         omniauth_data: session[:omniauth],
         user_params: user_params
       )
 
+      # `.result` returns a Socialmux::Result, which gives us the
+      # found/generated user that we need to sign in
       result = authentication.result
       @user = result.user
+
+      # If you cannot save the model, it's because some required fields
+      # could not be extracted from the thirdy party authentication source.
+      # We render a form that points to this very same action.
 
       if @user.save
         sign_in_and_notice(@user, result.event)
