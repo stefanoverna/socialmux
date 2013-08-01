@@ -1,6 +1,7 @@
 # Socialmux
 
 [![Build Status](https://travis-ci.org/stefanoverna/socialmux.png)](https://travis-ci.org/stefanoverna/socialmux)
+[![Coverage Status](https://coveralls.io/repos/stefanoverna/socialmux/badge.png?branch=master)](https://coveralls.io/r/stefanoverna/socialmux?branch=master)
 
 Socialmux implements a strategy to add multiple social providers to the same
 user. It's meant to be used togheter with OmniAuth.
