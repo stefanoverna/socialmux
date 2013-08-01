@@ -1,4 +1,5 @@
 require 'hashie'
+require 'active_support/inflector'
 
 require 'socialmux/auth_mapper/base'
 require 'socialmux/auth_mapper/guess_name'
@@ -15,11 +16,12 @@ module Socialmux
     def self.init_with_data(data)
       data = Hashie::Mash.new(data)
 
-      klass_name = "Social::AuthMapper::#{data.provider.classify}"
+      klass_name = "Socialmux::AuthMapper::#{data.provider.classify}"
       klass = klass_name.constantize
       klass.new(data)
+
     rescue NameError
-      raise NotFound, "Mapper #{klass_name} for provider #{data.provider} not found!"
+      raise NotFound, "Mapper for provider #{data.provider} not found!"
     end
   end
 end
