@@ -1,0 +1,45 @@
+{
+  "provider": "linkedin",
+  "uid": "yCmV0Ms_fg",
+  "info": {
+    "name": "Stefano Verna",
+    "email": "stefano.verna@gmail.com",
+    "nickname": "Stefano Verna",
+    "first_name": "Stefano",
+    "last_name": "Verna",
+    "location": {
+      "country": {
+        "code": "it"
+      },
+      "name": "Turin Area, Italy"
+    },
+    "description": "Software Engineer at weLaika",
+    "image": "http://m.c.lnkd.licdn.com/mpr/mprx/0_dCvykIIfOoeQZqWUdXQ_keMhpEuE4-4UIhTikeHriWZsFnfR5k5KoHyO-G2vUzJBHTBCwfsBBN4N",
+    "urls": {
+      "public_profile": "http://www.linkedin.com/in/stefanoverna"
+    }
+  },
+  "credentials": {
+    "token": "AQWNmOocx29HFFuURNQLcryKvUsavFZAVdWF0qbQT5UjcHq53urDGqt5rLQt8Hj8U4bK7kiGh9U5vHAqTUWOxDOuy8uNpigdaqT-s5BIFQ1h-NM1MCopCjMqaQbleV8I6l1dJDH8MmHal9SGpPzAGySmhnWPbi7xrAbJvtmCyM2ncoSM05M",
+    "expires": false
+  },
+  "extra": {
+    "raw_info": {
+      "emailAddress": "stefano.verna@gmail.com",
+      "firstName": "Stefano",
+      "headline": "Software Engineer at weLaika",
+      "id": "yCmV0Ms_fg",
+      "industry": "Computer Software",
+      "lastName": "Verna",
+      "location": {
+        "country": {
+          "code": "it"
+        },
+        "name": "Turin Area, Italy"
+      },
+      "pictureUrl": "http://m.c.lnkd.licdn.com/mpr/mprx/0_dCvykIIfOoeQZqWUdXQ_keMhpEuE4-4UIhTikeHriWZsFnfR5k5KoHyO-G2vUzJBHTBCwfsBBN4N",
+      "publicProfileUrl": "http://www.linkedin.com/in/stefanoverna"
+    }
+  }
+}
+

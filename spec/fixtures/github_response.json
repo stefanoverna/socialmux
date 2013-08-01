@@ -1,0 +1,65 @@
+{
+  "provider": "github",
+  "uid": "51573",
+  "info": {
+    "nickname": "stefanoverna",
+    "email": "stefano.verna@gmail.com",
+    "name": "Stefano Verna",
+    "image": "https://secure.gravatar.com/avatar/f1b1c16a5b246b3b7cff8d8a07aa9725?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+    "urls": {
+      "GitHub": "https://github.com/stefanoverna",
+      "Blog": "http://www.stefanoverna.com"
+    }
+  },
+  "credentials": {
+    "token": "13a3342fedef375a62049c5b43bd1b93d602976e",
+    "expires": false
+  },
+  "extra": {
+    "raw_info": {
+      "login": "stefanoverna",
+      "id": 51573,
+      "avatar_url": "https://secure.gravatar.com/avatar/f1b1c16a5b246b3b7cff8d8a07aa9725?d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "gravatar_id": "f1b1c16a5b246b3b7cff8d8a07aa9725",
+      "url": "https://api.github.com/users/stefanoverna",
+      "html_url": "https://github.com/stefanoverna",
+      "followers_url": "https://api.github.com/users/stefanoverna/followers",
+      "following_url": "https://api.github.com/users/stefanoverna/following{/other_user}",
+      "gists_url": "https://api.github.com/users/stefanoverna/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/stefanoverna/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/stefanoverna/subscriptions",
+      "organizations_url": "https://api.github.com/users/stefanoverna/orgs",
+      "repos_url": "https://api.github.com/users/stefanoverna/repos",
+      "events_url": "https://api.github.com/users/stefanoverna/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/stefanoverna/received_events",
+      "type": "User",
+      "name": "Stefano Verna",
+      "company": "WeLaika",
+      "blog": "http://www.stefanoverna.com",
+      "location": "Turin, Italy",
+      "email": "stefano.verna@gmail.com",
+      "hireable": false,
+      "bio": null,
+      "public_repos": 41,
+      "followers": 37,
+      "following": 8,
+      "created_at": "2009-02-03T23:54:53Z",
+      "updated_at": "2013-07-31T17:12:52Z",
+      "public_gists": 32,
+      "total_private_repos": 0,
+      "owned_private_repos": 0,
+      "disk_usage": 31462,
+      "collaborators": 0,
+      "plan": {
+        "name": "free",
+        "space": 307200,
+        "collaborators": 0,
+        "private_repos": 0
+      },
+      "private_gists": 8,
+      "site_admin": false
+    }
+  }
+}
+
+

@@ -1,0 +1,35 @@
+{
+  "provider": "google_oauth2",
+  "uid": "106136318376168001814",
+  "info": {
+    "name": "Stefano Verna",
+    "email": "stefano.verna@gmail.com",
+    "first_name": "Stefano",
+    "last_name": "Verna",
+    "image": "https://lh3.googleusercontent.com/-Mk9Xg5Qy_vc/AAAAAAAAAAI/AAAAAAAAAK4/h0ffVEFGrTo/photo.jpg",
+    "urls": {
+      "Google": "https://plus.google.com/106136318376168001814"
+    }
+  },
+  "credentials": {
+    "token": "ya29.AHES6ZS4zco44x0wdzotIcxR08dmOz9rlPjUb9BDcaNcRZFSkcroQQ",
+    "expires_at": 1375288165,
+    "expires": true
+  },
+  "extra": {
+    "raw_info": {
+      "id": "106136318376168001814",
+      "email": "stefano.verna@gmail.com",
+      "verified_email": true,
+      "name": "Stefano Verna",
+      "given_name": "Stefano",
+      "family_name": "Verna",
+      "link": "https://plus.google.com/106136318376168001814",
+      "picture": "https://lh3.googleusercontent.com/-Mk9Xg5Qy_vc/AAAAAAAAAAI/AAAAAAAAAK4/h0ffVEFGrTo/photo.jpg",
+      "gender": "male",
+      "birthday": "0000-09-25",
+      "locale": "en"
+    }
+  }
+}
+

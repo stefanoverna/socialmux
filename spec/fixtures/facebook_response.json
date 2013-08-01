@@ -1,0 +1,158 @@
+{
+  "provider": "facebook",
+  "uid": "771417286",
+  "info": {
+    "nickname": "stefano.verna",
+    "email": "stefano.verna@welaika.com",
+    "name": "Stefano Verna",
+    "first_name": "Stefano",
+    "last_name": "Verna",
+    "image": "http://graph.facebook.com/771417286/picture?type=square",
+    "urls": {
+      "Facebook": "https://www.facebook.com/stefano.verna"
+    },
+    "location": "Florence, Italy",
+    "verified": true
+  },
+  "credentials": {
+    "token": "CAAEFnHx42BIBAAl6OMh3HZC5y7MQ7AfAObg27UkrUCdx2YqSp651w6UMHvd6PrNJMEaBKE1dpb4oH152Ppq6OBsg56pnIWC0ZCYvRRO4JaCZBiW01uaDyXxLLc8O5mZBLpRpy8DyklJBGiGhplO6C4VkZCfkZBZCNUZD",
+    "expires_at": 1380465613,
+    "expires": true
+  },
+  "extra": {
+    "raw_info": {
+      "id": "771417286",
+      "name": "Stefano Verna",
+      "first_name": "Stefano",
+      "last_name": "Verna",
+      "link": "https://www.facebook.com/stefano.verna",
+      "username": "stefano.verna",
+      "hometown": {
+        "id": "115351801811432",
+        "name": "Turin, Italy"
+      },
+      "location": {
+        "id": "105782926129203",
+        "name": "Florence, Italy"
+      },
+      "work": [
+        {
+          "employer": {
+            "id": "201330109900200",
+            "name": "Cantiere Creativo"
+          },
+          "start_date": "2012-03-01"
+        },
+        {
+          "employer": {
+            "id": "276067326850",
+            "name": "weLaika"
+          },
+          "location": {
+            "id": "115351801811432",
+            "name": "Turin, Italy"
+          },
+          "position": {
+            "id": "109542932398298",
+            "name": "Software Engineer"
+          },
+          "start_date": "2010-09-01"
+        },
+        {
+          "employer": {
+            "id": "115201351823736",
+            "name": "Freelance"
+          },
+          "location": {
+            "id": "115351801811432",
+            "name": "Turin, Italy"
+          },
+          "position": {
+            "id": "108480125843293",
+            "name": "Web Developer"
+          },
+          "start_date": "2007-03-01",
+          "end_date": "0000-00"
+        },
+        {
+          "employer": {
+            "id": "153608871363738",
+            "name": "Agavee"
+          },
+          "from": {
+            "id": "1013042151",
+            "name": "Paolo Pustorino"
+          },
+          "projects": [
+            {
+              "id": "384529628287352",
+              "name": "DreamBoard",
+              "with": [
+                {
+                  "id": "1013042151",
+                  "name": "Paolo Pustorino"
+                }
+              ],
+              "from": {
+                "id": "1013042151",
+                "name": "Paolo Pustorino"
+              }
+            }
+          ]
+        }
+      ],
+      "education": [
+        {
+          "school": {
+            "id": "114660608549885",
+            "name": "ITC E. Vittorini"
+          },
+          "year": {
+            "id": "113125125403208",
+            "name": "2004"
+          },
+          "type": "High School"
+        },
+        {
+          "school": {
+            "id": "112756382072680",
+            "name": "Polytechnic University of Turin"
+          },
+          "type": "College"
+        },
+        {
+          "school": {
+            "id": "109518992401285",
+            "name": "Polytechnic University of Turin"
+          },
+          "degree": {
+            "id": "115140791834804",
+            "name": "Ingegneria Informatica"
+          },
+          "year": {
+            "id": "138383069535219",
+            "name": "2005"
+          },
+          "type": "Graduate School"
+        }
+      ],
+      "gender": "male",
+      "email": "stefano.verna@welaika.com",
+      "timezone": 2,
+      "locale": "it_IT",
+      "languages": [
+        {
+          "id": "106059522759137",
+          "name": "English"
+        },
+        {
+          "id": "113153272032690",
+          "name": "Italian"
+        }
+      ],
+      "verified": true,
+      "updated_time": "2013-05-09T12:36:31+0000"
+    }
+  }
+}
+
