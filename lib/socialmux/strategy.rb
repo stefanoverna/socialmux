@@ -26,6 +26,10 @@ module Socialmux
       new_user
     end
 
+    def data
+      @data ||= AuthMapper.init_with_data(omniauth_data)
+    end
+
     private
 
     def returning_user
@@ -52,10 +56,6 @@ module Socialmux
       user = adapter.init_user
       augment_user(user)
       Result.new(user, Event::SIGN_UP)
-    end
-
-    def data
-      @data ||= AuthMapper.init_with_data(omniauth_data)
     end
 
     def augment_user(user)
