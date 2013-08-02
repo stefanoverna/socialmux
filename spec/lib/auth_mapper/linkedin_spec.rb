@@ -13,6 +13,8 @@ module Socialmux::AuthMapper
     its(:email) { should eq "stefano.verna@gmail.com" }
     its(:image) { should eq "http://m.c.lnkd.licdn.com/mpr/mprx/0_dCvykIIfOoeQZqWUdXQ_keMhpEuE4-4UIhTikeHriWZsFnfR5k5KoHyO-G2vUzJBHTBCwfsBBN4N" }
     its(:description) { should eq "Software Engineer at weLaika" }
+    its(:url) { should eq "http://www.linkedin.com/in/stefanoverna" }
+    its(:gender) { should be_nil }
   end
 end
 

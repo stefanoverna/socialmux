@@ -15,6 +15,8 @@ module Socialmux::AuthMapper
     its(:email) { should be nil }
     its(:image) { should eq "http://a0.twimg.com/profile_images/3060238387/a9b2a4cd85377cf0c12b22fedcac80b3_normal.png" }
     its(:description) { should eq "28 years, 2 babies, Rails and iOS developer, cofounder of @weLaika. Tweet me anytime! ♥" }
+    its(:url) { should eq "https://twitter.com/steffoz" }
+    its(:gender) { should be_nil }
   end
 end
 

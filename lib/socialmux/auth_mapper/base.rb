@@ -1,5 +1,6 @@
 require 'hashie'
 require 'active_support/core_ext/module/delegation'
+require 'socialmux/gender'
 
 module Socialmux
   module AuthMapper
@@ -18,6 +19,14 @@ module Socialmux
 
       def initialize(data)
         @data = Hashie::Mash.new(data)
+      end
+
+      def url
+        info.urls.values.first
+      end
+
+      def gender
+        nil
       end
     end
   end
