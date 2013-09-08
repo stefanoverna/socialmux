@@ -2,7 +2,7 @@ module Socialmux
   module AuthMapper
     class GuessName < Base
       def first_name
-        name_chunks.first
+        name_chunks.first || ""
       end
 
       def last_name

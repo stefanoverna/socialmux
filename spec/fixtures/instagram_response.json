@@ -1,0 +1,17 @@
+{
+  "provider": "instagram",
+  "uid": "15075543",
+  "info": {
+    "nickname": "steffoz",
+    "name": "Stefano Verna",
+    "image": "http://images.ak.instagram.com/profiles/anonymousUser.jpg",
+    "bio": "Foobar",
+    "website": "http://google.com"
+  },
+  "credentials": {
+    "token": "XXX",
+    "expires": false
+  },
+  "extra": {}
+}
+

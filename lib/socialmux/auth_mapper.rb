@@ -8,6 +8,7 @@ require 'socialmux/auth_mapper/twitter'
 require 'socialmux/auth_mapper/github'
 require 'socialmux/auth_mapper/google_oauth2'
 require 'socialmux/auth_mapper/linkedin'
+require 'socialmux/auth_mapper/instagram'
 
 module Socialmux
   module AuthMapper
