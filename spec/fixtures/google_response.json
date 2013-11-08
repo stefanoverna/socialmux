@@ -6,10 +6,7 @@
     "email": "stefano.verna@gmail.com",
     "first_name": "Stefano",
     "last_name": "Verna",
-    "image": "https://lh3.googleusercontent.com/-Mk9Xg5Qy_vc/AAAAAAAAAAI/AAAAAAAAAK4/h0ffVEFGrTo/photo.jpg",
-    "urls": {
-      "Google": "https://plus.google.com/106136318376168001814"
-    }
+    "image": "https://lh3.googleusercontent.com/-Mk9Xg5Qy_vc/AAAAAAAAAAI/AAAAAAAAAK4/h0ffVEFGrTo/photo.jpg"
   },
   "credentials": {
     "token": "XXX",

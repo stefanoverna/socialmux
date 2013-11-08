@@ -12,10 +12,8 @@ module Socialmux::AuthMapper
     its(:last_name) { should eq "Verna" }
     its(:email) { should eq "stefano.verna@gmail.com" }
     its(:image) { should eq "https://lh3.googleusercontent.com/-Mk9Xg5Qy_vc/AAAAAAAAAAI/AAAAAAAAAK4/h0ffVEFGrTo/photo.jpg" }
-    its(:url) { should eq "https://plus.google.com/106136318376168001814" }
+    its(:url) { should be_nil }
     its(:gender) { should eq Gender::MALE }
   end
 end
-
-
 

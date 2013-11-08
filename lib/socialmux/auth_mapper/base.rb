@@ -22,7 +22,7 @@ module Socialmux
       end
 
       def url
-        info.urls.values.first
+        info.urls.values.first if info.urls
       end
 
       def gender
