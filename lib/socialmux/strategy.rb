@@ -20,6 +20,7 @@ module Socialmux
     end
 
     def result
+      authentication_already_taken ||
       returning_user ||
       augmented_current_user ||
       augmented_user_with_same_email ||
@@ -31,6 +32,13 @@ module Socialmux
     end
 
     private
+
+    def authentication_already_taken
+      user = adapter.find_user_with_authentication(data)
+      if current_user && user && current_user != user
+        Result.new(nil, Event::AUTHENTICATION_ALREADY_TAKEN)
+      end
+    end
 
     def returning_user
       user = adapter.find_user_with_authentication(data)

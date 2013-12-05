@@ -30,7 +30,21 @@ module Socialmux
         strategy.stubs(:augment_user)
       end
 
+      context 'previous authentication is found, but linked to a user different than the one currently signed in' do
+        let(:current_user) { user }
+        let(:another_user) { stub('User') }
+
+        before do
+          adapter.stubs(:find_user_with_authentication).with(mapper).returns(another_user)
+        end
+
+        its(:user) { should be_nil }
+        its(:event) { should eq Event::AUTHENTICATION_ALREADY_TAKEN }
+      end
+
       context "previous authentication is found" do
+        let(:current_user) { nil }
+
         before do
           adapter.stubs(:find_user_with_authentication).with(mapper).returns(user)
         end
