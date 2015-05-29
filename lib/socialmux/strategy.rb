@@ -5,13 +5,13 @@ module Socialmux
   class Strategy
     attr_reader :adapter
     attr_reader :current_user
-    attr_reader :omniauth_data
+    attr_reader :data
     attr_reader :user_params
 
     def initialize(options)
       options.assert_valid_keys(:adapter,
                                 :current_user,
-                                :omniauth_data,
+                                :data,
                                 :user_params)
 
       options.each do |key, value|
@@ -25,10 +25,6 @@ module Socialmux
       augmented_current_user ||
       augmented_user_with_same_email ||
       new_user
-    end
-
-    def data
-      @data ||= AuthMapper.init_with_data(omniauth_data)
     end
 
     private

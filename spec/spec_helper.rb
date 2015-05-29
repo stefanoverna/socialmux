@@ -3,6 +3,7 @@ Coveralls.wear!
 
 require 'rubygems'
 require 'bundler'
+require 'rspec/its'
 require 'socialmux'
 
 # add project root to load path

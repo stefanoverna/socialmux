@@ -6,14 +6,13 @@ module Socialmux
     let(:adapter) { stub('SchemaAdapter') }
     let(:user) { stub('User') }
     let(:mapper) { stub('Social::AuthMapper::Base', email: 'email') }
-    let(:omniauth_data) { stub('OmniAuth::AuthResult') }
     let(:user_params) { stub('params') }
 
     let(:strategy) do
       Strategy.new(
         current_user: current_user,
         adapter: adapter,
-        omniauth_data: omniauth_data,
+        data: mapper,
         user_params: user_params
       )
     end

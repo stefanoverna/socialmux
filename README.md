@@ -139,7 +139,7 @@ end
       authentication = Socialmux::Strategy.new(
         adapter: SocialSchemaAdapter.new,
         current_user: current_user,
-        omniauth_data: session[:omniauth],
+        data: AuthMapper.init_with_data(session[:omniauth]),
         user_params: user_params
       )
 
