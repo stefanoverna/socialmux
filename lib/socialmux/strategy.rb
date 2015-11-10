@@ -57,7 +57,7 @@ module Socialmux
     end
 
     def new_user
-      user = adapter.init_user
+      user = adapter.init_user(data, user_params)
       augment_user(user)
       Result.new(user, Event::SIGN_UP)
     end
