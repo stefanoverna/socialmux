@@ -16,8 +16,7 @@ module Socialmux
 
     def self.init_with_data(data)
       data = Hashie::Mash.new(data)
-
-      klass_name = "Socialmux::AuthMapper::#{data.provider.classify}"
+      klass_name = "Socialmux::AuthMapper::#{data.provider.to_s.classify}"
       klass = klass_name.constantize
       klass.new(data)
 
